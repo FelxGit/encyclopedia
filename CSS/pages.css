@@ -1,0 +1,296 @@
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(../Font/Raleway-ExtraLight.ttf);
+}
+body {
+    height: auto;
+    width: 100%;
+    font-family: myFirstFont,verdana,Arial,sans-serif;
+    font-weight: bold;
+    margin: 0px;
+    color: rgb(51, 51, 51);
+    font-size: 2vw;
+    
+}
+* {box-sizing: border-box}
+
+header {
+    height: auto;
+    width: 100%;
+    padding: 2%;
+    margin: 0px;
+    background-color: rgb(213, 219, 219);
+    font-size: 3vw;
+    text-align: center;
+    font-family: Bradley Hand ITC;
+}
+
+
+div img {
+   
+    width: 100%;
+}
+
+/*/////////////*/
+.navbar > .dropdown:nth-child(3){
+    margin-left: 17%;
+}
+
+.navbar {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    background-color: #333;
+    margin: 0px;
+    font-size: 1.5vw;
+}
+
+.navbar a {
+    float: left;   /**/
+    color: lightgray;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.drop-wrap {
+    display: black;
+}
+.dropdown {
+    float: left;/**/
+    background-color: #333;
+}
+.dropdown .dropbtn {
+    height: 100%; 
+    font-family: myFirstFont;
+    font-size: 1.5vw;
+    border: none;
+    outline: none;
+    color: lightgrey;
+    background-color: #333;
+    padding: 14px 16px;
+    margin: 0;
+}
+
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: grey;
+    color: white;
+    
+}
+
+.dropdown-content {
+    display: none; /**/
+    position: absolute;  /**/
+    
+    width: 25%;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
+}
+.dropdown-content a:hover {
+    color: purple;
+}
+.dropdown-content a {
+    float: none; /**/
+    font-size: 1.5vw;
+    transition: color 0.5s;
+    color: black;
+    padding: 3% 5%;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block; /**/
+}
+
+.cut {
+    border-top: 2px dashed;
+}
+
+pre {
+    font-family: myFirstFont;
+    text-align: left;
+    font-size: 2vw;
+}
+
+#content {
+    padding: 5%;
+    text-align: center;
+    font-size: 2.5vw;;
+}
+
+.answers,.question {
+    text-align: left;
+}
+
+input[type="submit"] {
+    height: auto;
+    width: 50%;
+    font-size: 5vw;
+}
+
+#myself {
+    width: 100%;
+    border-top: thin solid grey;
+    padding: 20px;
+}
+
+#myself .myself-img {
+    width: 30%;
+    padding: 10px;
+    padding-top: 50px;
+    font-size: 2vh;
+    float: left;
+    text-align: center;
+    
+}
+#myself .myself-img img{
+    width: 50%;
+    height: 30%;
+}
+
+
+
+#disclaimer{
+    padding: 20px;
+}
+#fold {color: white;text-align: right}
+/*For smaller devices*/
+@media screen and (max-width: 1000px){
+
+    .navbar {
+    }
+    .drop-wrap {
+        clear: left;
+        display: none;
+        border-top: thin solid white;
+    }
+    .navbar > .dropdown:nth-child(3){
+    margin-left: 0px;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+    .dropbtn {
+        font-size: 3.5vw;
+    }
+}
+
+@media screen and (max-width: 550px){
+    header {
+        background-color: aliceblue;
+        font-size: 5vw;
+    }
+    
+    .navbar {font-size: 4vw;}
+    .dropdown-content a {font-size: 4vw;}
+    .dropdown .dropbtn{
+        font-size: 4vw;
+    }
+     
+    pre {
+        text-align: center;
+        font-size: 4vw;
+    }
+
+    #content {
+        font-size: 5vw;;
+    }
+    .dropdown-content{
+        border-right: 10px solid gold;
+    }
+    .navbar > .dropdown:nth-child(3){
+        display: block;
+    }
+    .drop-wrap > .dropdown {
+        clear: left;
+        width: 60%;
+    }
+    
+    .drop-wrap > .dropdown:hover {
+        background-color: grey;
+    }
+    
+    .dropdown-content{
+        width: 200px;
+        left: 70px;
+        position: absolute;
+    }
+    
+    #quizS{
+        font-size: 5vw;
+    }
+    
+
+    #myself {
+        width: 100%;
+        border-top: thin solid grey;
+        padding: 20px;
+    }
+
+    #myself .myself-img {
+        width: 100%;
+        padding: 10px;
+        display: block;
+        padding-top: 50px;
+        font-size: 4vw;
+        text-align: center;
+        background-image: radial-gradient(azure,white); 
+    }
+   
+    #myself .myself-txt {
+            clear: left;
+            font-size: 4vw;
+        }
+    #disclaimer {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 350px){
+    #myself {
+        width: 100%;
+        border-top: thin solid grey;
+        padding: 20px;
+    }
+
+    #myself .myself-img {
+        width: 100%;
+        padding: 10px;
+        display: block;
+        padding-top: 50px;
+        font-size: 4vw;
+        text-align: center;
+        background-image: radial-gradient(azure,white); 
+
+    }
+    #myself .myself-img img{
+        width: 80%;
+        height: 250px;
+        border: 5px solid lightgrey;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px grey;
+    }
+    #myself .myself-txt {
+            clear: left;
+            font-size: 4vw;
+        }
+    #disclaimer {
+        font-size: 4vw;
+    }
+}
+
+
+/*For larger screens*/
+@media screen and (min-width: 2000px){
+    .navbar .dropdown {
+        padding-left: 2%;   
+    }
+}
